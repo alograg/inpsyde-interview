@@ -31,5 +31,5 @@ This solution is in the directory ``./packagist``.
 
 ### Plugin inside a full WordPress instalation
 
-This solution is the least modular but it works with the [Wordpress Development Template](http://wordpress-dev.evopiru.com/) solution to implement plugins on installations.
+This solution is the least modular but it works with the [Wordpress Development Templates](http://wordpress-dev.evopiru.com/) solution to implement plugins on installations.
 This solution is in the directory ``./using_full_wp``.

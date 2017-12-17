@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Alograg Inpsyde Interview" tests="1" assertions="0" failures="0" errors="0" time="0.007018">
+    <testsuite name="Alograg\Wp\Tests\NoncesTest" file="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/tests/NoncesTest.php" tests="1" assertions="0" failures="0" errors="0" time="0.007018">
+      <testcase name="testNoncesCreate" class="Alograg\Wp\Tests\NoncesTest" file="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/tests/NoncesTest.php" line="34" assertions="0" time="0.007018"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

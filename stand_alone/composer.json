@@ -47,10 +47,15 @@
       "./vendor/bin/phploc --count-tests --log-xml ./doc/xml/phploc.xml ./src ./tests",
       "./vendor/bin/phpdox"
     ],
-    "test": "./vendor/bin/phpunit"
+    "test": "./vendor/bin/phpunit",
+    "publish": [
+      "@dox",
+      "git add ./doc",
+      "git commit --amend --no-edit",
+      "git push"
+    ]
   },
   "require": {
-
     "php": "^5.4.16"
   }
 }

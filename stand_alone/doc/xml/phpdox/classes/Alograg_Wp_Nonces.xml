@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Alograg\Wp\Nonces" namespace="Alograg\Wp" name="Nonces" abstract="false" final="false" start="24" end="32">
+  <file path="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src" file="Nonces.php" realpath="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Nonces.php" size="707" time="2017-12-17T06:20:01-06:00" unixtime="1513513201" sha1="44629bd409ff66c7dd3485e74732691c2a994408" relative="Nonces.php"/>
+  <docblock>
+    <description compact="Undocumented class"/>
+    <category value="Package"/>
+    <package value="WordPress"/>
+    <author value="Henry Isaac Galvez Thuillier &lt;henry@alograg.me&gt;"/>
+    <license name="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+    <link value="https://github.com/alograg/inpsyde-interview/stand_alone"/>
+  </docblock>
+  <constructor name="__construct" start="29" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Construcctor"/>
+    </docblock>
+  </constructor>
+</class>

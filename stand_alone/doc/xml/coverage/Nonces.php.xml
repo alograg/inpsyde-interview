@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Nonces.php">
+    <totals>
+      <lines total="32" comments="23" code="9" executable="1" executed="1" percent="100.00%"/>
+      <methods count="1" tested="1" percent="100.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="1" percent="100.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Nonces" start="24" executable="1" executed="1" crap="1">
+      <package full="WordPress" name="WordPress" sub="" category="Package"/>
+      <namespace name="Alograg\Wp"/>
+      <method name="__construct" signature="__construct()" start="29" end="31" crap="1" executable="1" executed="1" coverage="100"/>
+    </class>
+    <coverage>
+      <line nr="31">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testNoncesCreate"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>
