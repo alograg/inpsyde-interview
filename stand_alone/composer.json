@@ -1,0 +1,56 @@
+{
+  "name": "alograg/inpsyde-interview",
+  "description": "Composer package, which serves the functionality working with WordPress Nonces.",
+  "type": "wordpress-plugin",
+  "license": "MIT License",
+  "authors": [{
+    "name": "Henry Isaac Galvez Thuillier",
+    "role": "Fullstack Web Developer",
+    "homepage": "https://alograg.me",
+    "email": "henry@alograg.me"
+  }],
+  "minimum-stability": "dev",
+  "keywords": [
+    "wordpress",
+    "nonces"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Alograg\\Wp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Alograg\\Wp\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "theseer/phpdox": "dev-master",
+    "nikic/php-parser": "3.x-dev",
+    "squizlabs/php_codesniffer": "^3.0@dev",
+    "phpmd/phpmd": "dev-master",
+    "phploc/phploc": "^4.0@dev",
+    "phpunit/phpunit": "5.7.x-dev",
+    "sebastian/phpcpd": "^3.0@dev",
+    "phpmetrics/phpmetrics": "dev-master"
+  },
+  "scripts": {
+    "dox": [
+      "rm -Rf doc/xml/pdepend",
+      "./vendor/bin/phpcpd --log-pmd doc/xml/pmd-cpd.xml ./src",
+      "@test",
+      "./vendor/bin/phpmetrics --report-html=doc/resume ./src",
+      "mkdir doc/xml/pdepend",
+      "./vendor/bin/pdepend --jdepend-xml=doc/xml/pdepend/jdepend.xml --jdepend-chart=doc/xml/pdepend/dependencies.svg --overview-pyramid=doc/xml/pdepend/overview-pyramid.svg ./src",
+      "./vendor/bin/phpmd ./src xml codesize,design,naming,unusedcode --reportfile doc/xml/pmd.xml",
+      "./vendor/bin/phpcs --report=checkstyle --report-file=doc/xml/phpcs.xml --standard=PSR2 ./src",
+      "./vendor/bin/phploc --count-tests --log-xml ./doc/xml/phploc.xml ./src ./tests",
+      "./vendor/bin/phpdox"
+    ],
+    "test": "./vendor/bin/phpunit"
+  },
+  "require": {
+
+    "php": "^5.4.16"
+  }
+}

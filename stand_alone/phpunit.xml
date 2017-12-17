@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false" backupStaticAttributes="false" bootstrap="vendor/autoload.php" colors="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true" processIsolation="false" stopOnFailure="false">
+  <testsuites>
+    <testsuite name="Alograg Inpsyde Interview">
+      <directory suffix="Test.php">./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="false">
+      <directory suffix=".php">./src</directory>
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="testdox-html" target="./doc/testdox.html"/>
+    <!--<log type="testdox-text" target="./doc/testdox.txt"/>-->
+    <log type="coverage-html" target="doc/coverage" title="phpDox" charset="UTF-8" yui="true" highlight="true" lowUpperBound="35" highLowerBound="70"/>
+    <log type="coverage-clover" target="doc/xml/clover.xml"/>
+    <log type="coverage-xml" target="doc/xml/coverage"/>
+    <log type="coverage-crap4j" target="doc/xml/crap.xml"/>
+    <log type="junit" target="doc/xml/junit.xml" logIncompleteSkipped="false"/>
+  </logging>
+  <php>
+    <env name="APP_ENV" value="testing"/>
+    <env name="CACHE_DRIVER" value="array"/>
+    <env name="SESSION_DRIVER" value="array"/>
+    <env name="QUEUE_DRIVER" value="sync"/>
+    <env name="MAIL_DRIVER" value="log"/>
+  </php>
+</phpunit>
