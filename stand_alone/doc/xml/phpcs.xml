@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="3.2.1">
+<file name="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Nonces.php">
+ <error line="36" column="49" severity="error" message="Incorrect spacing between argument &quot;$userId&quot; and equals sign; expected 1 but found 0" source="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeEquals"/>
+ <error line="36" column="49" severity="error" message="Incorrect spacing between default value and equals sign for argument &quot;$userId&quot;; expected 1 but found 0" source="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceAfterDefault"/>
+ <error line="150" column="53" severity="error" message="Only one argument is allowed per line in a multi-line function call" source="PSR2.Methods.FunctionCallSignature.MultipleArguments"/>
+</file>
 </checkstyle>
 

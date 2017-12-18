@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src">
-    <file name="Nonces.php" size="707" time="2017-12-17T06:20:01-06:00" unixtime="1513513201" sha1="44629bd409ff66c7dd3485e74732691c2a994408" xml="tokens/Nonces.php.xml"/>
+    <file name="Nonces.php" size="5637" time="2017-12-17T23:29:49-06:00" unixtime="1513574989" sha1="8701fdb96306a4091b8fbca5e3d97ef915888205" xml="tokens/Nonces.php.xml"/>
+    <file name="Hash.php" size="850" time="2017-12-17T20:02:41-06:00" unixtime="1513562561" sha1="1862628c21db209dd47b0cc41bfda170af95df17" xml="tokens/Hash.php.xml"/>
+    <file name="Referer.php" size="1199" time="2017-12-17T21:10:48-06:00" unixtime="1513566648" sha1="735caf824695924e0c056c54d1e60164b8eaab97" xml="tokens/Referer.php.xml"/>
   </dir>
 </source>

@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content">
         <div class="report-details">
-            Created at 2017-12-17 07:21:59        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2017-12-17 23:38:15        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
 
@@ -82,11 +82,27 @@
                 </thead>
                                     <tr>
                         <td>Alograg\Wp\Nonces</td>
-                        <td>7</td>
+                        <td>63</td>
+                        <td>73</td>
+                        <td>754.92</td>
+                        <td>76.25</td>
+                        <td>45.33</td>
+                    </tr>
+                                    <tr>
+                        <td>Alograg\Wp\Hash</td>
+                        <td>8</td>
+                        <td>16</td>
                         <td>12</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>47.14</td>
+                        <td>14.4</td>
+                        <td>47.68</td>
+                    </tr>
+                                    <tr>
+                        <td>Alograg\Wp\Referer</td>
+                        <td>12</td>
+                        <td>17</td>
+                        <td>57.36</td>
+                        <td>20.86</td>
+                        <td>46.35</td>
                     </tr>
                             </table>
         </div>
@@ -277,7 +293,52 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    data = [];
+    data = [
+    {
+        "lloc": 8,
+        "percentile": 50
+    },
+    {
+        "lloc": 8,
+        "percentile": 55
+    },
+    {
+        "lloc": 8,
+        "percentile": 60
+    },
+    {
+        "lloc": 8,
+        "percentile": 65
+    },
+    {
+        "lloc": 8,
+        "percentile": 70
+    },
+    {
+        "lloc": 12,
+        "percentile": 75
+    },
+    {
+        "lloc": 12,
+        "percentile": 80
+    },
+    {
+        "lloc": 12,
+        "percentile": 85
+    },
+    {
+        "lloc": 12,
+        "percentile": 90
+    },
+    {
+        "lloc": 12,
+        "percentile": 95
+    },
+    {
+        "lloc": 12,
+        "percentile": 100
+    }
+];
 
     x.domain(data.map(function (d) {
         return d.percentile;

@@ -53,6 +53,12 @@
             <a href="#coverage">Coverage</a>
           </li>
           <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
             <a href="#history">History</a>
           </li>
           <li>
@@ -70,7 +76,21 @@
         </ul>
         <h2 id="synopsis">Synopsis</h2>
         <div class="synopsis">class Nonces
-            {<br/><ul class="none"><li>// methods</li><li>public void <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/__construct.xhtml">__construct</a>()
+            {<br/><ul class="none"><li>// members</li><li>protected integer <a href="#members">$tick</a> =
+                        0;
+                    </li><li>protected  <a href="#members">$action</a> =
+                        NULL;
+                    </li><li>protected  <a href="#members">$userId</a> =
+                        NULL;
+                    </li><li>public  <a href="#members">$token</a> =
+                        NULL;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/__construct.xhtml">__construct</a>()
+                    </li><li>public string <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/__toString.xhtml">__toString</a>()
+                    </li><li>public static float <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/tick.xhtml">tick</a>()
+                    </li><li>public static string <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/field.xhtml">field</a>()
+                    </li><li>public static string <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/getToken.xhtml">getToken</a>()
+                    </li><li>public static string <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/url.xhtml">url</a>()
+                    </li><li>public static false|int <a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/verify.xhtml">verify</a>()
                     </li></ul>
 
             }<br/></div>
@@ -78,15 +98,56 @@
         <table class="styled">
           <tr>
             <td>Methods</td>
-            <td class="percent">100%</td>
-            <td class="nummeric">1 / 1</td>
+            <td class="percent">57.14%</td>
+            <td class="nummeric">4 / 7</td>
           </tr>
           <tr>
             <td>Lines</td>
-            <td class="percent">100%</td>
-            <td class="nummeric">1 / 1</td>
+            <td class="percent">92%</td>
+            <td class="nummeric">46 / 50</td>
           </tr>
         </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="action">
+              <strong>$action</strong>
+            </li>
+            <li id="tick">
+              <strong>$tick</strong>
+            </li>
+            <li id="userId">
+              <strong>$userId</strong>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="token">
+              <strong>$token</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/__construct.xhtml">__construct()</a>
+                — Construcctor</li>
+            <li id="__toString"><a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/__toString.xhtml">__toString()</a>
+                — As token</li>
+            <li id="field"><a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/field.xhtml">field()</a>
+                — Generate HTML field with NonceString</li>
+            <li id="getToken"><a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/getToken.xhtml">getToken()</a>
+                — Generate a Nonces and take he tocken</li>
+            <li id="tick"><a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/tick.xhtml">tick()</a>
+                — Get the time-dependent variable for nonce creation.</li>
+            <li id="url"><a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/url.xhtml">url()</a>
+                — Retrieve URL with nonce added to URL query.</li>
+            <li id="verify"><a title="Alograg\Wp\Nonces" href="../classes/Alograg_Wp_Nonces/verify.xhtml">verify()</a>
+                — Verify that correct nonce was used with time limit.</li>
+          </ul>
+        </div>
         <h2 id="history">History</h2>
         <ul class="styled history"/>
       </section>

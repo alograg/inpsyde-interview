@@ -24,9 +24,9 @@ I consider that your request has 3 viable solutions.
 __Stand alone package__ solution is a package witch can work without any thing else like WordPress Nonces functions.
 This solution is in the directory ``./stand_alone``.
 
-### Package for [__*WordPress Packagist*__](https://wpackagist.org/)
+### Package for WordPress Packagist
 
-The packagist solution is developed to be loaded as a package that gives access to WordPress Nonces functions in an OOP manner.
+The packagist solution is developed to be loaded as a package from [__*WordPress Packagist*__](https://wpackagist.org/), that gives access to WordPress Nonces functions in an OOP manner.
 This solution is in the directory ``./packagist``.
 
 ### Plugin inside a full WordPress instalation

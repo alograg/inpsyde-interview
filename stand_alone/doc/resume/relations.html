@@ -49,7 +49,7 @@
 <div class="page">
     <div class="content">
         <div class="report-details">
-            Created at 2017-12-17 07:21:59        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
+            Created at 2017-12-17 23:38:15        , with PHPMetrics v2.3.2 (<a href="https://twitter.com/Halleck45">Jean-François Lépine</a>).
         </div>
 
 
@@ -221,6 +221,25 @@
     var relations = [
     {
         "name": "\\Alograg\\Wp\\Nonces",
+        "size": 3000,
+        "relations": [
+            "\\self",
+            "\\Alograg\\Wp\\Hash",
+            "\\Alograg\\Wp\\Referer"
+        ]
+    },
+    {
+        "name": "\\self",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Alograg\\Wp\\Hash",
+        "size": 3000,
+        "relations": []
+    },
+    {
+        "name": "\\Alograg\\Wp\\Referer",
         "size": 3000,
         "relations": []
     }

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
+  <file name="Referer.php">
+    <totals>
+      <lines total="44" comments="28" code="16" executable="6" executed="4" percent="66.67%"/>
+      <methods count="1" tested="0" percent="0.00%"/>
+      <functions count="0" tested="0" percent=""/>
+      <classes count="1" tested="0" percent="0.00%"/>
+      <traits count="0" tested="0" percent=""/>
+    </totals>
+    <class name="Referer" start="24" executable="6" executed="4" crap="2.15">
+      <package full="WordPress" name="WordPress" sub="" category="Package"/>
+      <namespace name="Alograg\Wp"/>
+      <method name="field" signature="field($echo = false)" start="34" end="43" crap="2.15" executable="6" executed="4" coverage="66.666666666667"/>
+    </class>
+    <coverage>
+      <line nr="37">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="38">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="39">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="42">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+    </coverage>
+  </file>
+</phpunit>

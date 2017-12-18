@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Alograg\Wp\Hash" namespace="Alograg\Wp" name="Hash" abstract="false" final="false" start="24" end="37">
+  <file path="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src" file="Hash.php" realpath="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Hash.php" size="850" time="2017-12-17T20:02:41-06:00" unixtime="1513562561" sha1="1862628c21db209dd47b0cc41bfda170af95df17" relative="Hash.php"/>
+  <docblock>
+    <description compact="Undocumented class"/>
+    <category value="Package"/>
+    <package value="WordPress"/>
+    <author value="Henry Isaac Galvez Thuillier &lt;henry@alograg.me&gt;"/>
+    <license name="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+    <link value="https://github.com/alograg/inpsyde-interview/stand_alone"/>
+  </docblock>
+  <method name="forapplyTo" start="33" end="36" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Codifi data"/>
+      <param type="string" variable="$data"/>
+      <param type="string" variable="$salt"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="salt" byreference="false" type="{unknown}"/>
+  </method>
+</class>

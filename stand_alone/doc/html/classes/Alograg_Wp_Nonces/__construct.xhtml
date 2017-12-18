@@ -53,10 +53,13 @@
             <a href="#synopsis">Synopsis</a>
           </li>
           <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
             <a href="#tests">Tests</a>
           </li>
           <li>
-            <a href="../../source/Nonces.php.xhtml#line29">Source</a>
+            <a href="../../source/Nonces.php.xhtml#line36">Source</a>
           </li>
         </ul>
       </nav>
@@ -67,20 +70,35 @@
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function __construct()
+          <code>public function __construct(<a title="Alograg\Wp\string|int" href="../../classes/Alograg_Wp_string|int.xhtml">string|int</a>
+        $action,
+            [<a title="Alograg\Wp\string|int" href="../../classes/Alograg_Wp_string|int.xhtml">string|int</a>
+        $userId = NULL] )
             </code>
         </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$action</code>
+                —
+                object</dt>
+          <dd>Scalar value to add context to the nonce.<br/><br/><br/>      </dd>
+          <dt><code>$userId</code>
+                —
+                object</dt>
+          <dd>User identifier.<br/><br/><br/>      </dd>
+        </dl>
         <h2 id="tests">Test Coverage</h2>
         <div class="styled">
           <h3>Information</h3>
           <ul class="styled">
-            <li>Coverage: 1/1 Lines (100%)</li>
-            <li>Tests: 1</li>
-            <li>Passed: 1 (100%)</li>
+            <li>Coverage: 15/15 Lines (100%)</li>
+            <li>Tests: 2</li>
+            <li>Passed: 2 (100%)</li>
           </ul>
           <h3>Tests</h3>
           <ul class="styled">
-            <li>[ <span class="testresult-PASSED">PASSED</span> ] — Alograg\Wp\Tests\NoncesTest::testNoncesCreate</li>
+            <li>[ <span class="testresult-PASSED">PASSED</span> ] — Alograg\Wp\Tests\NoncesTest::testField</li>
+            <li>[ <span class="testresult-PASSED">PASSED</span> ] — Alograg\Wp\Tests\NoncesTest::testValidate</li>
           </ul>
         </div>
       </section>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="Alograg\Wp\Nonces" namespace="Alograg\Wp" name="Nonces" abstract="false" final="false" start="24" end="32">
-  <file path="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src" file="Nonces.php" realpath="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Nonces.php" size="707" time="2017-12-17T06:20:01-06:00" unixtime="1513513201" sha1="44629bd409ff66c7dd3485e74732691c2a994408" relative="Nonces.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="Alograg\Wp\Nonces" namespace="Alograg\Wp" name="Nonces" abstract="false" final="false" start="24" end="177">
+  <file path="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src" file="Nonces.php" realpath="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Nonces.php" size="5637" time="2017-12-17T23:29:49-06:00" unixtime="1513574989" sha1="8701fdb96306a4091b8fbca5e3d97ef915888205" relative="Nonces.php"/>
   <docblock>
     <description compact="Undocumented class"/>
     <category value="Package"/>
@@ -9,9 +9,83 @@
     <license name="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
     <link value="https://github.com/alograg/inpsyde-interview/stand_alone"/>
   </docblock>
-  <constructor name="__construct" start="29" end="31" abstract="false" final="false" static="false" visibility="public">
+  <member name="tick" default="0" type="integer" visibility="protected" static="false" line="26"/>
+  <member name="action" default="NULL" visibility="protected" static="false" line="27"/>
+  <member name="userId" default="NULL" visibility="protected" static="false" line="28"/>
+  <member name="token" default="NULL" visibility="public" static="false" line="29"/>
+  <constructor name="__construct" start="36" end="56" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="Construcctor"/>
+      <param description="Scalar value to add context to the nonce." type="object" variable="$action">
+        <type full="Alograg\Wp\string|int" namespace="Alograg\Wp" name="string|int"/>
+      </param>
+      <param description="User identifier." type="object" variable="$userId">
+        <type full="Alograg\Wp\string|int" namespace="Alograg\Wp" name="string|int"/>
+      </param>
     </docblock>
+    <parameter name="action" byreference="false" type="{unknown}"/>
+    <parameter name="userId" byreference="false" type="{unknown}" default="NULL"/>
   </constructor>
+  <method name="__toString" start="62" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="As token"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="tick" start="74" end="78" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the time-dependent variable for nonce creation.">A nonce has a lifespan of two ticks. Nonces in their second tick may be
+updated, e.g. by autosave.</description>
+      <return description="Float value rounded up to the next highest integer." type="float"/>
+    </docblock>
+  </method>
+  <method name="field" start="92" end="110" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Generate HTML field with NonceString"/>
+      <param description="Optional. Action name. Default -1." type="object" variable="$action">
+        <type full="Alograg\Wp\int|string" namespace="Alograg\Wp" name="int|string"/>
+      </param>
+      <param description="Optional. Nonce name. Default '_wpnonce'." type="string" variable="$name"/>
+      <param description="Optional. Whether to set the referer field" type="object" variable="$referer">for validation. Default true.<type full="Alograg\Wp\bool" namespace="Alograg\Wp" name="bool"/></param>
+      <param description="Optional. Whether to display or return hidden form" type="object" variable="$echo">field. Default true.<type full="Alograg\Wp\bool" namespace="Alograg\Wp" name="bool"/></param>
+      <return description="Nonce field HTML markup." type="string"/>
+    </docblock>
+    <parameter name="action" byreference="false" type="integer" default="1"/>
+    <parameter name="name" byreference="false" type="string" default="&quot;_wpnonce&quot;"/>
+    <parameter name="referer" byreference="false" type="boolean" default="true"/>
+    <parameter name="echo" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="getToken" start="119" end="123" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Generate a Nonces and take he tocken"/>
+      <param description="Scalar value to add context to the nonce." type="integer" variable="$action"/>
+      <return description="Tocken string" type="string"/>
+    </docblock>
+    <parameter name="action" byreference="false" type="integer" default="1"/>
+  </method>
+  <method name="url" start="135" end="152" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Retrieve URL with nonce added to URL query."/>
+      <param description="URL to add nonce action." type="string" variable="$actionUrl"/>
+      <param description="Optional. Nonce action name." type="object" variable="$action">Default -1.<type full="Alograg\Wp\int|string|Nonces" namespace="Alograg\Wp" name="int|string|Nonces"/></param>
+      <param description="Optional. Nonce name." type="string" variable="$name">Default '_wpnonce'.</param>
+      <return description="Escaped URL with nonce action added." type="string"/>
+    </docblock>
+    <parameter name="actionUrl" byreference="false" type="{unknown}"/>
+    <parameter name="action" byreference="false" type="integer" default="1"/>
+    <parameter name="name" byreference="false" type="string" default="'_wpnonce'"/>
+  </method>
+  <method name="verify" start="168" end="176" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Verify that correct nonce was used with time limit.">The user is given an amount of time to use the token, so therefore, since the
+UID and $action remain the same, the independent variable is the time.</description>
+      <param description="Nonce that was used in the form to verify" type="string" variable="$nonce"/>
+      <param description="Should give context to what is taking place and be" type="object" variable="$action">the same when nonce was created.<type full="Alograg\Wp\string|int" namespace="Alograg\Wp" name="string|int"/></param>
+      <return description="False if the nonce is invalid, 1 if the nonce is valid and" type="object">generated between
+                  0-12 hours ago, 2 if the nonce is valid and generated
+                  between 12-24 hours ago.<type full="Alograg\Wp\false|int" namespace="Alograg\Wp" name="false|int"/></return>
+    </docblock>
+    <parameter name="nonce" byreference="false" type="{unknown}"/>
+    <parameter name="action" byreference="false" type="integer" default="1"/>
+  </method>
 </class>

@@ -3,8 +3,8 @@
   <Packages>
     <Package name="Alograg\Wp">
       <Stats>
-        <TotalClasses>1</TotalClasses>
-        <ConcreteClasses>1</ConcreteClasses>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
         <AbstractClasses>0</AbstractClasses>
         <Ca>0</Ca>
         <Ce>0</Ce>
@@ -13,7 +13,9 @@
         <D>1</D>
       </Stats>
       <ConcreteClasses>
+        <Class sourceFile="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Hash.php">Hash</Class>
         <Class sourceFile="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Nonces.php">Nonces</Class>
+        <Class sourceFile="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Referer.php">Referer</Class>
       </ConcreteClasses>
       <AbstractClasses/>
       <DependsUpon/>

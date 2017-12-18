@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Alograg\Wp\Referer" namespace="Alograg\Wp" name="Referer" abstract="false" final="false" start="24" end="44">
+  <file path="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src" file="Referer.php" realpath="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src/Referer.php" size="1199" time="2017-12-17T21:10:48-06:00" unixtime="1513566648" sha1="735caf824695924e0c056c54d1e60164b8eaab97" relative="Referer.php"/>
+  <docblock>
+    <description compact="Undocumented class"/>
+    <category value="Package"/>
+    <package value="WordPress"/>
+    <author value="Henry Isaac Galvez Thuillier &lt;henry@alograg.me&gt;"/>
+    <license name="http://www.php.net/license/3_01.txt  PHP License 3.01"/>
+    <link value="https://github.com/alograg/inpsyde-interview/stand_alone"/>
+  </docblock>
+  <method name="field" start="34" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Generate refererfield"/>
+      <param description="Optional. Whether to echo or return the referer field." type="object" variable="$echo">Default false.<type full="Alograg\Wp\bool" namespace="Alograg\Wp" name="bool"/></param>
+      <return description="Referer field HTML markup." type="string"/>
+    </docblock>
+    <parameter name="echo" byreference="false" type="boolean" default="false"/>
+  </method>
+</class>

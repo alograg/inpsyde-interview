@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Alograg\Wp\Nonces::verify</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml#Alograg_Wp">Alograg\Wp</a>
+          </li>
+          <li class="separator">
+            <a title="Alograg\Wp\Nonces" href="../../classes/Alograg_Wp_Nonces.xhtml">Nonces</a>
+          </li>
+          <li class="separator">verify</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="#tests">Tests</a>
+          </li>
+          <li>
+            <a href="../../source/Nonces.php.xhtml#line168">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1><small>Alograg\Wp\Nonces::</small>verify</h1>
+        <h4>Verify that correct nonce was used with time limit.</h4>
+        <p>The user is given an amount of time to use the token, so therefore, since the
+UID and $action remain the same, the independent variable is the time.</p>
+        <ul/>
+        <h2 id="signature">Signature</h2>
+        <div class="styled synopsis">
+          <code>public function verify(string
+        $nonce,
+            [integer
+        $action = 1] )
+            </code>
+        </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$nonce</code>
+                —
+                string</dt>
+          <dd>Nonce that was used in the form to verify</dd>
+          <dt><code>$action</code>
+                —
+                integer</dt>
+          <dd>Should give context to what is taking place and be<br/>the same when nonce was created.</dd>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>false|int</dt>
+          <dd>False if the nonce is invalid, 1 if the nonce is valid and<br/>generated between
+                  0-12 hours ago, 2 if the nonce is valid and generated
+                  between 12-24 hours ago.</dd>
+        </dl>
+        <h2 id="tests">Test Coverage</h2>
+        <div class="styled">
+          <h3>Information</h3>
+          <ul class="styled">
+            <li>Coverage: 4/5 Lines (80%)</li>
+            <li>Tests: 1</li>
+            <li>Passed: 1 (100%)</li>
+          </ul>
+          <h3>Tests</h3>
+          <ul class="styled">
+            <li>[ <span class="testresult-PASSED">PASSED</span> ] — Alograg\Wp\Tests\NoncesTest::testValidate</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.10.1-10-ge521bc9 - Copyright (C) 2010 - 2017 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

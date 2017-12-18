@@ -2,20 +2,178 @@
 <phpunit xmlns="http://schema.phpunit.de/coverage/1.0">
   <file name="Nonces.php">
     <totals>
-      <lines total="32" comments="23" code="9" executable="1" executed="1" percent="100.00%"/>
-      <methods count="1" tested="1" percent="100.00%"/>
+      <lines total="177" comments="84" code="93" executable="50" executed="46" percent="92.00%"/>
+      <methods count="7" tested="4" percent="57.14%"/>
       <functions count="0" tested="0" percent=""/>
-      <classes count="1" tested="1" percent="100.00%"/>
+      <classes count="1" tested="0" percent="0.00%"/>
       <traits count="0" tested="0" percent=""/>
     </totals>
-    <class name="Nonces" start="24" executable="1" executed="1" crap="1">
+    <class name="Nonces" start="24" executable="50" executed="46" crap="14.10">
       <package full="WordPress" name="WordPress" sub="" category="Package"/>
       <namespace name="Alograg\Wp"/>
-      <method name="__construct" signature="__construct()" start="29" end="31" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="__construct" signature="__construct($action, $userId=null)" start="36" end="56" crap="2" executable="15" executed="15" coverage="100"/>
+      <method name="__toString" signature="__toString()" start="62" end="65" crap="1" executable="1" executed="1" coverage="100"/>
+      <method name="tick" signature="tick()" start="74" end="78" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="field" signature="field(&#10;        $action = -1,&#10;        $name = &quot;_wpnonce&quot;,&#10;        $referer = true,&#10;        $echo = true&#10;    )" start="92" end="110" crap="3.05" executable="11" executed="9" coverage="81.818181818182"/>
+      <method name="getToken" signature="getToken($action = -1)" start="119" end="123" crap="1" executable="2" executed="2" coverage="100"/>
+      <method name="url" signature="url($actionUrl, $action = -1, $name = '_wpnonce')" start="135" end="152" crap="4.01" executable="14" executed="13" coverage="92.857142857143"/>
+      <method name="verify" signature="verify($nonce, $action = -1)" start="168" end="176" crap="2.03" executable="5" executed="4" coverage="80"/>
     </class>
     <coverage>
-      <line nr="31">
-        <covered by="Alograg\Wp\Tests\NoncesTest::testNoncesCreate"/>
+      <line nr="38">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="39">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="40">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="41">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="42">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="43">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="44">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="46">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="47">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="48">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="50">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="52">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="53">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="55">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="56">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="64">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testToken"/>
+      </line>
+      <line nr="76">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="77">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="98">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="100">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="101">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="102">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="103">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="104">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="105">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="106">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="109">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="121">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="122">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testField"/>
+      </line>
+      <line nr="137">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="138">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="139">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="140">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="141">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="142">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="143">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="144">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="145">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="148">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="149">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="150">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="151">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testUrl"/>
+      </line>
+      <line nr="170">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="171">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="174">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
+      </line>
+      <line nr="175">
+        <covered by="Alograg\Wp\Tests\NoncesTest::testValidate"/>
       </line>
     </coverage>
   </file>

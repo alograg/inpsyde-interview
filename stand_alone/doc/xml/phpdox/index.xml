@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <index xmlns="http://xml.phpdox.net/src" basedir="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src">
   <namespace name="Alograg\Wp">
-    <class name="Nonces" src="Nonces.php" description="Undocumented class" xml="classes/Alograg_Wp_Nonces.xml"/>
-  </namespace>
+    
+  <class name="Nonces" src="Nonces.php" description="Undocumented class" xml="classes/Alograg_Wp_Nonces.xml"/><class name="Hash" src="Hash.php" description="Undocumented class" xml="classes/Alograg_Wp_Hash.xml"/><class name="Referer" src="Referer.php" description="Undocumented class" xml="classes/Alograg_Wp_Referer.xml"/></namespace>
 </index>

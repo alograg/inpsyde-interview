@@ -1,25 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2017-12-17 07:21:59</timestamp>
+  <timestamp>2017-12-17 23:38:14</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>1</methodCount>
+    <methodCount>9</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>1</totalCrap>
+    <totalCrap>17.24</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
       <package>Alograg\Wp</package>
-      <className>Nonces</className>
-      <methodName>__construct</methodName>
-      <methodSignature>__construct()</methodSignature>
-      <fullMethod>__construct()</fullMethod>
+      <className>Hash</className>
+      <methodName>forapplyTo</methodName>
+      <methodSignature>forapplyTo($data, $salt)</methodSignature>
+      <fullMethod>forapplyTo($data, $salt)</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Nonces</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct($action, $userId=null)</methodSignature>
+      <fullMethod>__construct($action, $userId=null)</fullMethod>
+      <crap>2</crap>
+      <complexity>2</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Nonces</className>
+      <methodName>__toString</methodName>
+      <methodSignature>__toString()</methodSignature>
+      <fullMethod>__toString()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Nonces</className>
+      <methodName>tick</methodName>
+      <methodSignature>tick()</methodSignature>
+      <fullMethod>tick()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Nonces</className>
+      <methodName>field</methodName>
+      <methodSignature>field(
+        $action = -1,
+        $name = "_wpnonce",
+        $referer = true,
+        $echo = true
+    )</methodSignature>
+      <fullMethod>field(
+        $action = -1,
+        $name = "_wpnonce",
+        $referer = true,
+        $echo = true
+    )</fullMethod>
+      <crap>3.05</crap>
+      <complexity>3</complexity>
+      <coverage>81.82</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Nonces</className>
+      <methodName>getToken</methodName>
+      <methodSignature>getToken($action = -1)</methodSignature>
+      <fullMethod>getToken($action = -1)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Nonces</className>
+      <methodName>url</methodName>
+      <methodSignature>url($actionUrl, $action = -1, $name = '_wpnonce')</methodSignature>
+      <fullMethod>url($actionUrl, $action = -1, $name = '_wpnonce')</fullMethod>
+      <crap>4.01</crap>
+      <complexity>4</complexity>
+      <coverage>92.86</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Nonces</className>
+      <methodName>verify</methodName>
+      <methodSignature>verify($nonce, $action = -1)</methodSignature>
+      <fullMethod>verify($nonce, $action = -1)</fullMethod>
+      <crap>2.03</crap>
+      <complexity>2</complexity>
+      <coverage>80</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Alograg\Wp</package>
+      <className>Referer</className>
+      <methodName>field</methodName>
+      <methodSignature>field($echo = false)</methodSignature>
+      <fullMethod>field($echo = false)</fullMethod>
+      <crap>2.15</crap>
+      <complexity>2</complexity>
+      <coverage>66.67</coverage>
       <crapLoad>0</crapLoad>
     </method>
   </methods>

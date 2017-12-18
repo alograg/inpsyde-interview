@@ -35,6 +35,7 @@
     "phpmetrics/phpmetrics": "dev-master"
   },
   "scripts": {
+    "test": "./vendor/bin/phpunit",
     "dox": [
       "rm -Rf doc/xml/pdepend",
       "./vendor/bin/phpcpd --log-pmd doc/xml/pmd-cpd.xml ./src",
@@ -43,11 +44,10 @@
       "mkdir doc/xml/pdepend",
       "./vendor/bin/pdepend --jdepend-xml=doc/xml/pdepend/jdepend.xml --jdepend-chart=doc/xml/pdepend/dependencies.svg --overview-pyramid=doc/xml/pdepend/overview-pyramid.svg ./src",
       "./vendor/bin/phpmd ./src xml codesize,design,naming,unusedcode --reportfile doc/xml/pmd.xml",
-      "./vendor/bin/phpcs --report=checkstyle --report-file=doc/xml/phpcs.xml --standard=PSR2 ./src",
+      "./vendor/bin/phpcs --report=checkstyle --report-file=doc/xml/phpcs.xml --standard=PSR2 ./src ./tests",
       "./vendor/bin/phploc --count-tests --log-xml ./doc/xml/phploc.xml ./src ./tests",
       "./vendor/bin/phpdox"
     ],
-    "test": "./vendor/bin/phpunit",
     "publish": [
       "@dox",
       "git add ./doc",

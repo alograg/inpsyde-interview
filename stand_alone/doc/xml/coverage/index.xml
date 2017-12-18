@@ -3,21 +3,43 @@
   <project name="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src">
     <tests>
       <test name="Alograg\Wp\Tests\NoncesTest::testNoncesCreate" size="unknown" result="0" status="PASSED"/>
+      <test name="Alograg\Wp\Tests\NoncesTest::testToken" size="unknown" result="0" status="PASSED"/>
+      <test name="Alograg\Wp\Tests\NoncesTest::testField" size="unknown" result="0" status="PASSED"/>
+      <test name="Alograg\Wp\Tests\NoncesTest::testUrl" size="unknown" result="0" status="PASSED"/>
+      <test name="Alograg\Wp\Tests\NoncesTest::testValidate" size="unknown" result="0" status="PASSED"/>
     </tests>
     <directory name="/home/alograg/projects/repository/entrevistas/inpsyde-interview/stand_alone/src">
       <totals>
-        <lines total="32" comments="23" code="9" executable="1" executed="1" percent="100.00%"/>
-        <methods count="1" tested="1" percent="100.00%"/>
+        <lines total="258" comments="139" code="119" executable="57" executed="51" percent="89.47%"/>
+        <methods count="9" tested="5" percent="55.56%"/>
         <functions count="0" tested="0" percent=""/>
-        <classes count="1" tested="1" percent="100.00%"/>
+        <classes count="3" tested="1" percent="33.33%"/>
         <traits count="0" tested="0" percent=""/>
       </totals>
-      <file name="Nonces.php" href="Nonces.php.xml">
+      <file name="Hash.php" href="Hash.php.xml">
         <totals>
-          <lines total="32" comments="23" code="9" executable="1" executed="1" percent="100.00%"/>
+          <lines total="37" comments="27" code="10" executable="1" executed="1" percent="100.00%"/>
           <methods count="1" tested="1" percent="100.00%"/>
           <functions count="0" tested="0" percent=""/>
           <classes count="1" tested="1" percent="100.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Nonces.php" href="Nonces.php.xml">
+        <totals>
+          <lines total="177" comments="84" code="93" executable="50" executed="46" percent="92.00%"/>
+          <methods count="7" tested="4" percent="57.14%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
+          <traits count="0" tested="0" percent=""/>
+        </totals>
+      </file>
+      <file name="Referer.php" href="Referer.php.xml">
+        <totals>
+          <lines total="44" comments="28" code="16" executable="6" executed="4" percent="66.67%"/>
+          <methods count="1" tested="0" percent="0.00%"/>
+          <functions count="0" tested="0" percent=""/>
+          <classes count="1" tested="0" percent="0.00%"/>
           <traits count="0" tested="0" percent=""/>
         </totals>
       </file>
